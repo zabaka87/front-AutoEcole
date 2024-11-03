@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des candidats</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Identifiant</th>
+                    <th scope="col">Nom et Prénom</th>
+                    <th scope="col">Adresse</th>
+                    <th scope="col">Code postal</th>
+                    <th scope="col">Ville</th>
+                    <th scope="col">Date de naissance </th>
+                    <th scope="col">Téléphone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>157</td>
+                    <td>Zabaka Abdou</td>
+                    <td>22 allee jean mermoz</td>
+                    <td>34000</td>
+                    <td>Montpellier</td>
+                    <td>30/04/1987</td>
+                    <td>0658749865</td>
+                    <td>
+                        <div class="div-actions">
+                            <div>
+                                <a class="btn-list" asp-action="Edit" asp-route-id="@item.Id">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="btn-list" asp-action="Delete" asp-route-id="@item.Id">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="btn-list" asp-action="Details" asp-route-id="@item.Id">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    
+                </tr>
+                
+            </tbody>
+        
+        </table>
+        <div class="div-buttons">
+            <button class="btn-back" onclick="retour()">Retour</button>
+        </div>
+    </div>
+</body>
+</html>
+
+   
+   
